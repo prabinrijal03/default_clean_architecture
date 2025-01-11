@@ -9,7 +9,7 @@ class RootApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       initialRoute: AppRoute.initialRoute.path,
-      
+      onGenerateRoute: AppRoute.getRoute,
     );
   }
 }
